@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ShopItemActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#40C4FF"
+        android:layout_height="@dimen/dp_50"></TextView>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabalyout"
+        android:layout_width="@dimen/dp_150"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_120"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:tabSelectedTextColor="#ffffff"
+        app:tabIndicatorColor="#ffffff"
+        android:layout_height="@dimen/dp_50"/>
+    <TextView
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/ic_back"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

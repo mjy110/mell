@@ -1,0 +1,5 @@
+include ':adapterlibrary'
+include ':httplibrary'
+include ':mvvmlibrary'
+include ':app'
+rootProject.name = "Kotlinmell"

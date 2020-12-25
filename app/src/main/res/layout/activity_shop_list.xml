@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ShopListActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#40C4FF"
+        android:id="@+id/shoplistlin"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:background="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_130"
+            android:text="商品列表"/>
+    </LinearLayout>
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/shoplistrecycler"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintTop_toBottomOf="@id/shoplistlin"
+       android:layout_marginTop="@dimen/dp_50"/>
+    <TextView
+        android:id="@+id/qidai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="敬请期待~~~"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
